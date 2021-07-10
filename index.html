@@ -12,8 +12,8 @@
         marker.addEventListener(
           "markerFound",
           function() {
+            alert("I am an alert box!");
             this.vid.play();
-            window.alert("sometext");
           }.bind(this)
         );
 
