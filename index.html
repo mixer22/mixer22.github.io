@@ -52,26 +52,12 @@
         renderer='antialias: true; alpha: true; precision: mediump;'
         embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
 
-        <a-assets>
-            <video src="mov_bbb.mp4"
-                preload="auto" id="vid" response-type="arraybuffer" loop
-                crossorigin webkit-playsinline autoplay muted playsinline>
-            </video>
-        </a-assets>
-
         <a-nft
             videohandler
-            type='nft' url='../../data/dataNFT/pinball'
+            type='nft' url="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/mixer22/mixer22.github.io/master/cat/%D0%BA%D0%BE%D1%88%D0%BA%D0%B0.fset"
             smooth="true" smoothcount="10" smoothtolerance="0.01" smooththreshold="5"
         >
-            <a-video
-                src="#vid"
-                position='50 150 -100'
-                rotation='90 0 180'
-                width='300'
-                height='175'
-                >
-            </a-video>
+             <a-sphere position="0 0 0" radius="0.8" color="#2AA29F"></a-sphere>
         </a-nft>
 		<a-entity camera></a-entity>
 	</a-scene>
